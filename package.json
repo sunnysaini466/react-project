@@ -2,7 +2,7 @@
   "name": "learm-react",
   "version": "1.0.0",
   "description": "This is namaste react live",
-  "main": "App.js",
+  
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/sunnysaini466/react-project#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.10.3",
     "process": "^0.11.10"
   },
