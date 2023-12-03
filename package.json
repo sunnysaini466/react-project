@@ -1,0 +1,32 @@
+{
+  "name": "learm-react",
+  "version": "1.0.0",
+  "description": "This is namaste react live",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnysaini466/react-project.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "sunny saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunnysaini466/react-project/issues"
+  },
+  "homepage": "https://github.com/sunnysaini466/react-project#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
