@@ -1,32 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Title = (
-  <a href="/">
-    <img
-      className="logo"
-      alt="logo"
-      src="https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0"
-    />
-  </a>
-);
-
-const Header = () => (
-  <div className="header">
-    {Title}
-
-    <div className="nav-list">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Cart</li>
-      </ul>
-    </div>
-  </div>
-);
-
-const restaurantList = [
+export const IMG_CDN_URL =
+  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+export const restaurantList = [
   {
     type: "restaurant",
     data: {
@@ -1017,51 +991,4 @@ const restaurantList = [
     subtype: "basic",
   },
 ];
-
-const RestaurantCard = ({
-  cloudinaryImageId,
-  name,
-  cuisines,
-  totalRatingsString,
-}) => {
-  return (
-    <div className="card">
-      <img
-        alt="Burger"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
-      />
-      <h2>{name}</h2>
-      <h3>{cuisines.join(",")}</h3>
-      <h3>{totalRatingsString}</h3>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="restaurant-list">
-      {restaurantList.map((restaurant) => {
-        return <RestaurantCard {...restaurant?.data} key={restaurant?.data?.id} />;
-      })}
-    </div>
-  );
-};
-
-const Footer = () => <h2>Footer</h2>;
-
-const AppLayout = () => {
-  return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
+export const LOGO = "https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0";
