@@ -1,4 +1,4 @@
-import { LOGO } from "../constants";
+import LOGO from "../assets/img/food-villa.png";
 
 const Title = (
   <a href="/">
