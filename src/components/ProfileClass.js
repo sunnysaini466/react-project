@@ -13,6 +13,7 @@ class Profile extends React.Component {
   componentDidUpdate() {
     console.log("after re render it will call component did update");
   }
+  
   componentWillUnmount() {
     console.log("it will call after component will vanish");
   }
