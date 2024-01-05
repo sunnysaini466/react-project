@@ -1002,3 +1002,7 @@ export const LOGO =
 export const Fetch_All_Restaurant =
   CORS_PROXY_URL +
   "/dapi/restaurants/list/v5?lat=28.73057979999999&lng=77.7758825&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
+export const LINKEDIN_LINK = "https://www.linkedin.com/in/sunnysaini466/";
+export const GMAIL_LINK = "mailto:sunnysaini466@gmail.com";
+export const GITHUB_LINK = "https://github.com/sunnysaini466";
