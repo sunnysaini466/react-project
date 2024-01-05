@@ -18,7 +18,7 @@ const RestaurantMenu = () => {
 
   async function getRestaurantMenu() {
     /** get the API data */
-    /* Live Data */
+    /* Live Data */ 
     const response = await fetch(Fetch_Menu_Restaurant + id);
     const res_data = await response.json();
 
