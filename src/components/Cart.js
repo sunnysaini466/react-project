@@ -3,7 +3,7 @@ import { IMG_CDN_URL } from "../constants";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  //console.log(cartItems);
   return (
     <>
       <div className="h-screen bg-gray-100 pt-20">

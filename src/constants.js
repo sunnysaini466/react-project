@@ -1,5 +1,5 @@
 const CORS_PROXY_URL = "/api/";
-
+//const CORS_PROXY_URL = "https://www.swiggy.com";
 
 export const IMG_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
@@ -994,6 +994,11 @@ export const restaurantList = [
     subtype: "basic",
   },
 ];
-export const Fetch_Menu_Restaurant = CORS_PROXY_URL + "/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.73057979999999&lng=77.7758825&restaurantId=";
-export const LOGO = "https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0";
-export const Fetch_All_Restaurant = CORS_PROXY_URL + "/dapi/restaurants/list/v5?lat=28.73057979999999&lng=77.7758825&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const Fetch_Menu_Restaurant =
+  CORS_PROXY_URL +
+  "/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.73057979999999&lng=77.7758825&restaurantId=";
+export const LOGO =
+  "https://lh3.googleusercontent.com/p/AF1QipO_6cTc3QdC9L2vAOyCkUPG-G-9YeFxo3YiDu3R=w1080-h608-p-no-v0";
+export const Fetch_All_Restaurant =
+  CORS_PROXY_URL +
+  "/dapi/restaurants/list/v5?lat=28.73057979999999&lng=77.7758825&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";

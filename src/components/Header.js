@@ -12,7 +12,7 @@ const Title = (
 const Header = () => 
 {
   const cartItems = useSelector(store => store.cart.items);
-  console.log(cartItems)
+  //console.log(cartItems)
   return (
   <header className=" relative shadow-lg px-3 py-2">
     <nav className="flex justify-between">

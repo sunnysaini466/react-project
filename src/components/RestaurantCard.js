@@ -7,7 +7,7 @@ const RestaurantCard = ({
   avgRatingString,
   costForTwo,
 }) => {
-  console.log(cuisines)
+  
   return (
     <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
       <a href="#">

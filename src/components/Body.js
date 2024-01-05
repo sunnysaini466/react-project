@@ -11,7 +11,7 @@ function filterData(searchText, restaurants) {
     restaurant.info.name.toLowerCase().includes(searchText.toLowerCase())
   );
 }
-console.log(Fetch_All_Restaurant)
+//console.log(Fetch_All_Restaurant)
 const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [allRestaurants, setallRestaurants] = useState([]);
@@ -31,10 +31,10 @@ const Body = () => {
     const json = await data.json();
 
     setallRestaurants(
-      json.data.cards[5].card.card.gridElements.infoWithStyle.restaurants
+      json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
     );
     setfilterRestaurants(
-      json.data.cards[5].card.card.gridElements.infoWithStyle.restaurants
+      json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
     );
   }
 
