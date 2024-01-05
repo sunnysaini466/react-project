@@ -1,5 +1,7 @@
+import { useSelector } from "react-redux";
 import LOGO from "../assets/img/food-villa.png";
 import { Link } from "react-router-dom";
+import store from "../utils/store";
 
 const Title = (
   <Link to="/">
@@ -7,12 +9,16 @@ const Title = (
   </Link>
 );
 
-const Header = () => (
+const Header = () => 
+{
+  const cartItems = useSelector(store => store.cart.items);
+  console.log(cartItems)
+  return (
   <header className=" relative shadow-lg px-3 py-2">
     <nav className="flex justify-between">
       <Link to="/">
         <div className="w-[130px] md:w-[150px] flex items-center">
-          <img src={LOGO} alt="LOGO" srcset="" />
+          <img src={LOGO} alt="LOGO" srcSet="" />
         </div>
       </Link>
 
@@ -39,16 +45,20 @@ const Header = () => (
                 Instamart
               </li>
             </Link>
-            <li class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#2b68e0] to-[#e710ea]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-              <a href="#" role="button" class="relative flex">
-                <svg class="flex-1 w-8 h-8 fill-current" viewbox="0 0 24 24">
+            <Link to="/cart">
+            <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#2b68e0] to-[#e710ea]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+              <a href="#" role="button" className="relative flex">
+                <svg className="flex-1 w-8 h-8 fill-current">
                   <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
                 </svg>
-                <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
-                  5
+                <span className="absolute right-0 top-0 rounded-full bg-green-600 w-5 h-5 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
+                  {
+                    cartItems.length
+                  }
                 </span>
               </a>
             </li>
+            </Link>
           </ul>
         </div>
         {/* <div className="flex items-center gap-2">
@@ -58,6 +68,6 @@ const Header = () => (
       </div>
     </nav>
   </header>
-);
+)};
 
 export default Header;
